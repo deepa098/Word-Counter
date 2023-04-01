@@ -56,7 +56,7 @@ const App = () => {
         alignItems="center"
         bgGradient="linear(to-b, #e1cef4, #f4f4f4)"
       >
-        <Container maxW={Container.xl}>
+        <Container maxW='container.sm' >
           <h1 className="font">TEXTER</h1>
           <ButtonGroup
             variant="outline"
@@ -65,7 +65,7 @@ const App = () => {
             display={"flex"}
             justifyContent={"center"}
           >
-            <Button
+            <Button 
               _focusVisible={{ bg: "#0000" }}
               fontSize={"12"}
               boxShadow={"sm"}
@@ -98,7 +98,7 @@ const App = () => {
               I
             </Button>
 
-            <Box
+            <Button
               as="button"
               onClick={Italic}
               bg={"transparent"}
@@ -116,8 +116,8 @@ const App = () => {
               }}
             >
               Italic
-            </Box>
-            <Box
+            </Button>
+            <Button
               as="button"
               onClick={Normal}
               fontSize={"12"}
@@ -133,7 +133,7 @@ const App = () => {
               }}
             >
               Normal
-            </Box>
+            </Button>
           </ButtonGroup>
           <form action="">
             <Textarea
